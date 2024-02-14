@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="result" readonly>
+        <div class="buttons">
+            <div class="row">
+                <button class="function" onclick="appendToResult('7')">7</button>
+                <button class="function" onclick="appendToResult('4')">4</button>
+                <button class="function" onclick="appendToResult('1')">1</button>
+                <button class="function" onclick="appendToResult('0')">0</button>
+            </div>
+            <div class="row">
+                <button class="function" onclick="appendToResult('8')">8</button>
+                <button class="function" onclick="appendToResult('5')">5</button>
+                <button class="function" onclick="appendToResult('2')">2</button>
+                <button class="function" onclick="appendToResult('*')">x</button>
+            </div>
+            <div class="row">
+                <button class="function" onclick="appendToResult('9')">9</button>
+                <button class="function" onclick="appendToResult('6')">6</button>
+                <button class="function" onclick="appendToResult('3')">3</button>
+                <button class="function" onclick="appendToResult('-')">-</button>
+            </div>
+            <div class="row">
+                <button class="function1" onclick="clearResult()">C</button>
+                <button class="function1" onclick="appendToResult('+')">+</button>
+                <button class="function1" onclick="appendToResult('/')">/</button>
+                <button class="function1" onclick="calculateResult()">=</button>
+            </div>
+            <div class="row">
+                <button class="function1" onclick="percentage()">%</button>
+                <button class="function1" onclick="square()">x^2</button>
+                <button class="function1" onclick="cube()">x^3</button>
+                <button class="function1" onclick="log()">log</button>
+            </div>
+            <div class="row">
+                <button class="function1" onclick="sin()">sin</button>
+                <button class="function1" onclick="cos()">cos</button>
+                <button class="function1" onclick="tan()">tan</button>
+                <button class="function1" onclick="ln()">ln</button>
+            </div>
+            <div class="row">
+                <button class="function1" onclick="sqrt()">√</button>
+                <button class="function1" onclick="pow()">x^y</button>
+                <button class="function1" onclick="exp()">e^x</button>
+                <button class="function1" onclick="pi()">π</button>
+            </div>
+            <div class="row">
+                <button class="function1" onclick="abs()">|x|</button>
+                <button class="function1" onclick="arcsin()">arcsin</button>
+                <button class="function1" onclick="arccos()">arccos</button>
+                <button class="function1" onclick="arctan()">arctan</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
