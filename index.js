@@ -85,29 +85,29 @@ function toRadians(degrees) {
 
 
 function sin() {
-    setResult(Math.sin(toRadians(getResult())));
+    setResult(Math.sin(toDegrees(getResult())));
 }
 
 
 function cos() {
-    setResult(Math.cos(toRadians(getResult())));
+    setResult(Math.cos(toDegrees(getResult())));
 }
 
 
 function tan() {
-    setResult(Math.tan(toRadians(getResult())));
+    setResult(Math.tan(toDegrees(getResult())));
 }
 
 
 function arcsin() {
-    setResult(toDegrees(Math.asin(getResult())));
+    setResult(toRadians(Math.asin(getResult())));
 }
 
 
 function arccos() {
-    setResult(toDegrees(Math.acos(getResult())));
+    setResult(toRadians(Math.acos(getResult())));
 }
 
 function arctan() {
-    setResult(toDegrees(Math.atan(getResult())));
+    setResult(toRadians(Math.atan(getResult())));
 }
