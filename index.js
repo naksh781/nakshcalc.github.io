@@ -32,7 +32,6 @@ function log() {
     setResult(Math.log10(getResult()));
 }
 
-
 function ln() {
     setResult(Math.log(getResult()));
 }
@@ -65,16 +64,7 @@ function abs() {
     setResult(Math.abs(getResult()));
 }
 
-
-function getResult() {
-    return parseFloat(document.getElementById("inputValue").value);
-}
-
-function setResult(result) {
-    document.getElementById("outputResult").innerText = result;
-}
-
-
+// Conversion functions
 function toDegrees(radians) {
     return radians * (180 / Math.PI);
 }
@@ -83,31 +73,27 @@ function toRadians(degrees) {
     return degrees * (Math.PI / 180);
 }
 
-
+// Trigonometric functions
 function sin() {
-    setResult(Math.sin(toDegrees(getResult())));
+    setResult(Math.sin(toRadians(getResult())));
 }
-
 
 function cos() {
-    setResult(Math.cos(toDegrees(getResult())));
+    setResult(Math.cos(toRadians(getResult())));
 }
-
 
 function tan() {
-    setResult(Math.tan(toDegrees(getResult())));
+    setResult(Math.tan(toRadians(getResult())));
 }
-
 
 function arcsin() {
-    setResult(toRadians(Math.asin(getResult())));
+    setResult(toDegrees(Math.asin(getResult())));
 }
 
-
 function arccos() {
-    setResult(toRadians(Math.acos(getResult())));
+    setResult(toDegrees(Math.acos(getResult())));
 }
 
 function arctan() {
-    setResult(toRadians(Math.atan(getResult())));
+    setResult(toDegrees(Math.atan(getResult())));
 }
