@@ -65,6 +65,16 @@ function abs() {
     setResult(Math.abs(getResult()));
 }
 
+
+function getResult() {
+    return parseFloat(document.getElementById("inputValue").value);
+}
+
+function setResult(result) {
+    document.getElementById("outputResult").innerText = result;
+}
+
+
 function toDegrees(radians) {
     return radians * (180 / Math.PI);
 }
@@ -77,6 +87,7 @@ function toRadians(degrees) {
 function sin() {
     setResult(Math.sin(toRadians(getResult())));
 }
+
 
 function cos() {
     setResult(Math.cos(toRadians(getResult())));
@@ -96,7 +107,6 @@ function arcsin() {
 function arccos() {
     setResult(toDegrees(Math.acos(getResult())));
 }
-
 
 function arctan() {
     setResult(toDegrees(Math.atan(getResult())));
