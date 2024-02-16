@@ -44,6 +44,7 @@ function tan() {
     setResult(Math.tan(getResult()));
 }
 
+
 function ln() {
     setResult(Math.log(getResult()));
 }
@@ -95,5 +96,4 @@ function arccos() {
 function arctan() {
     setResult(toDegrees(Math.atan(toRadians(getResult()))));
 }
-
 
